@@ -1,0 +1,72 @@
+/* Utility Classes */
+.block {
+    display: block;
+}
+.fit {
+    width: 100%;
+    height: auto;
+}
+.flex {
+    display: flex;
+}
+.flex-spaced {
+    justify-content: space-between;
+}
+.flex-y-center {
+    align-items: center;
+}
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mr-4 {
+    margin-right: 1rem;
+}
+.py-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.px-4 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.border-b {
+    border-bottom: 1px solid;
+}
+.border-dark-soft {
+    border-color: #ccc;
+}
+.rounded {
+    border-radius: 0.25rem;
+}
+.shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.text-lg {
+    font-size: 1.125rem;
+}
+.text-medium {
+    font-weight: 500;
+}
+.text-dark {
+    color: #333;
+}
+.text-dark-softest {
+    color: #666;
+}
+.icon-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Component-Specific Classes */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+.link-softer {
+    color: #999;
+    text-decoration: none;
+}

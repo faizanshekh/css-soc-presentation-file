@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card without SoC</title>
+    <style>
+        .image-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .full-width-image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .section-split {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #ccc;
+        }
+        .section-split .title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-right: 1rem;
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+        .section-split .link {
+            color: #999;
+            text-decoration: none;
+        }
+        .split-items {
+            display: flex;
+            font-size: 1.125rem;
+            color: #333;
+        }
+        .split-item {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 1.5rem;
+            border-right: 1px solid #ccc;
+        }
+        .split-item:last-child {
+            border-right: none;
+        }
+        .icon {
+            width: 1rem;
+            height: 1rem;
+            margin-right: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-card">
+        <a href="#">
+            <img class="full-width-image" src="product.jpg" alt="Product Image">
+        </a>
+        <div class="section-split">
+            <div class="title">
+                <a href="#">Test-Driven Laravel</a>
+            </div>
+            <a href="#" class="link">
+                <img src="link-icon.png" alt="Link Icon">
+            </a>
+        </div>
+        <div class="split-items">
+            <div class="split-item">
+                <img src="currency-icon.png" class="icon" alt="Currency Icon">
+                <span>$3,475</span>
+            </div>
+            <div class="split-item">
+                <img src="user-icon.png" class="icon" alt="User Icon">
+                <span>25</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
